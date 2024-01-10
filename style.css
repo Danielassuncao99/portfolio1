@@ -1,146 +1,304 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins" , sans-serif;
-    text-decoration: none;
-    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+    
 }
 
-body{
-    overflow: auto;
-}
-
-
-
-
-
-.background{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./img/background.jpg);
-    background-size: cover;
-    background-position:center;
+.caixa-principal{
+    height: 100vh;
     width: 100%;
-    height: 130vh;
-    padding-bottom: 50px;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #191919;
     
-   
+}
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.Portfolio{
+    color: #ffffffff;
+}
+.Portfolio span {
+    color: #f9004d;
 }
 
-header{
+li{
+    display: inline-block;
+    list-style: none;
+    color: #ffffffff;
+    font-size: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+li:hover{
+    color: #f9004d;
+    transition: 0.5s;
+}
+.link-menu{
+    text-decoration: none;
+    color: #ffffffff;
+}
+.meu-nome{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+
+}
+h1{
+    color: #ffffffff;
+    font-size: 75px;
+}
+h1 span{
+    color: #f9004d;
+}
+.meu-nome{
+    color: #ffffffff;
+
+}
+
+section{
     display: flex;
-    justify-content: space-around;
-    max-width: 100%;
     align-items: center;
+    padding: 30px 15%;
+    background-color: #000000;
+}
+
+section img {
+    height: 300px;
+    border-radius: 100%;
+    margin-right: 30px;
+    
+}
+
+section div h2{
+    color: #ffffffff;
+    font-size: 75px;
+}
+
+section div p{
+    color: #e2b9c6;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+section div button{
+    color: #ffffffff;
+    background-color: #f9004d;
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+    border-radius: 26px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+section div button:hover{
+    background-color: black;
+    border: 3px solid #f9004d;
+    transition: 0.5s;}
+
+.projetos{
+    background-color: #191919;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+
+}
+.projetos h2{
+    color: #ffffffff;
+    font-size: 75px;
     text-align: center;
-    padding-top: 1rem;
-    flex-direction: column;
-   
-    
+}
+.card{
+    background-color: #000000;
+    height: 365px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+}.card img{
+    height: 100px;
+}
+.card h5{
+    color: #ffffffff;
+    font-size: 24px;
 }
 
-.cabeçalho-link{
-    
-    display: flex;
-    gap: 1rem;
-    font-weight: 300;
-    margin-top: 1rem;
-    cursor: pointer;  
+.card p{
+    color: #e2b9c6;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
-
-.cabeçalho-link a{
-    color: #fff;
-    font-size: 14px;
-}
-
-.cabeçalho-link a:hover{
-    color:  #2ecc71;
-    transition: 0.3s all;
-}
-
-.logo i{
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    border: 1px solid #2ecc71;
-    color: #2ecc71;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
+.card a{
+    background-color: #f9004d;
+    color: #ffffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
     cursor: pointer;
+    text-decoration: none;
 }
-
-
-button{
-    color: #2ecc71;
-    background: transparent;
-    border:solid 1px #2ecc71;
-    padding: 5px;
-    border-radius: 15px;
-    font-size: 12px;
-    cursor: pointer;
-    width: 150px;
-}
-
-button:hover{
-    background-color: #2ecc71;
-    color: #fff;
+.card a:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
     transition: 0.5s;
 }
 
-.container-text {
-    padding: 10px 50px;
-    
-    
+.card-projetos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
 }
 
-.text h3{
-    color: #fff;
-    font-size: 15px;
+footer {
+    background-color: #000000;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.text h1{
-    color: #fff;
-    margin-top: 5px;
+footer h5{
+    color: #ffffffff;
+    font-size: 30px;
+}
+footer p{
+    color: #ffffffff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+}
+.social img{
+    height:24px;
+
+
+}
+.social{
+    display: flex;
+    gap: 20px;
+}
+.social a{
+    background-color: #f9004d;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+}
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
 }
 
-.text span{
-    color: #2ecc71; 
-}
+/* Estilos padrão */
 
-.text p{
-    color: #fff;
-    font-weight: 500;
-    margin-top: 10px;
-    font-size: 14px;
-}
+/* ... (seu código existente) ... */
 
-.redes-social{
-    margin-top: 8px;
-}
-
-.redes-social a{
-    color: #2ecc71;
-    padding: 10px;
-    margin-top: 5px;
-}
-
-.btn{
-    margin-top: 15px;
-}
-.educacao{
-    color: #fff;
-    padding-bottom: 50px;
-}
-
-@media screen and (max-width:600px){
-    .cabeçalho-link {
-        display: none;
+/* Media Query para tornar o site responsivo para celulares */
+@media only screen and (max-width: 768px) {
+    .caixa-principal {
+        padding: 10px; /* Ajuste o espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
     }
-    
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .meu-nome {
+        margin-top: 10px; /* Ajuste o espaçamento superior */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduz o tamanho do nome */
+        margin-bottom: 5px; /* Ajuste o espaçamento inferior do nome */
+    }
+
+    h3 {
+        font-size: 14px; /* Reduz o tamanho da descrição */
+        margin-bottom: 10px; /* Ajuste o espaçamento inferior da descrição */
+    }
+
+    section img {
+        height: 200px;
+        max-width: 100px; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        margin-bottom: 20px; /* Ajuste o espaçamento inferior da imagem */
+        border-radius: 50%; /* Adiciona borda circular à imagem */
+    }
+
+    section div h2 {
+        font-size: 20px; /* Reduz um pouco o tamanho do título */
+        margin-bottom: 10px; /* Ajuste o espaçamento inferior do título */
+    }
+
+    section div p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    section div button {
+        width: 80%; /* Reduz a largura do botão */
+        max-width: 200px; /* Limita a largura máxima do botão */
+        font-size: 14px;
+        margin-top: 20px; /* Ajuste o espaçamento superior */
+    }
+
+    .projetos h2 {
+        font-size: 24px; /* Reduz um pouco o tamanho do título */
+        margin-bottom: 20px; /* Ajuste o espaçamento inferior do título */
+    }
+
+    .card img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        border-radius: 10px; /* Adiciona borda arredondada às imagens dos projetos */
+    }
+
+    .card h5 {
+        font-size: 16px; /* Reduz um pouco o tamanho do título */
+        margin-bottom: 10px; /* Ajuste o espaçamento inferior do título */
+    }
+
+    .card p {
+        font-size: 12px;
+        margin-bottom: 15px; /* Ajuste o espaçamento inferior do parágrafo */
+    }
+
+    .card a {
+        padding: 4px ;
+        font-size: 12px;
+    }
+
+    footer h5 {
+        font-size: 20px; /* Reduz um pouco o tamanho do título */
+        margin-bottom: 10px; /* Ajuste o espaçamento inferior do título */
+    }
+
+    footer p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .social a {
+        height: 40px;
+        width: 40px;
+    }
 }
+
+
+
