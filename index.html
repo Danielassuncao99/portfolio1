@@ -1,99 +1,242 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Daniel Assunção</title>
-
-</head>
-
-<body>
-    <div class="caixa-principal" id="Home">
-        <nav>
-            <h2 class="Portfolio" href="">Portfó<span>lio</span></h2>
-            <ul>
-                <li><a class="link-menu" href="#Home">Home</a></li>
-                <li><a class="link-menu" href="#sobre">Sobre</a></li>
-                <li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-                <li><a class="link-menu" href="#fale-comigo">Fale comigo</a></li>
-
-
-            </ul>
-        </nav>
-
-        <div class="meu-nome">
-            <h1>Daniel <span>Assunção</span> </h1>
-            <h3>Programador Front-end</h3>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <!-- title -->
+    <title>Daniel Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/extends.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar__content max-width mb-0">
+        <a href="/">
+          <img src="assets/favicon.png" alt="Daniel" />
+        </a>
+        <ul class="navbar__links">
+          <li><a href="#header">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+        <div class="navbar__mobile">
+          <img src="assets/menu.svg" alt="menu" class="burguer" />
+          <ul class="mobile__links">
+            <li><a href="#header">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#footer">Contato</a></li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <section id="sobre">
-        <img src="img/background2.png" alt="foto daniel">
-        <div>
-            <h2>Sobre mim</h2>
-            <p>Olá! Eu sou Daniel Assunção, um entusiasta da tecnologia com 24 anos e atualmente estudante de Análise e Desenvolvimento de Sistemas (2°período). Minha jornada no mundo da programação me proporcionou habilidades sólidas em HTML, CSS, JavaScript e Python, destacando-me como um apaixonado por criar soluções inovadoras. 
-
-                Desde jovem, sempre me fascinei por computadores e eletrônicos, e esse interesse cresceu naturalmente para uma paixão pela programação. Minha jornada até agora tem sido uma emocionante exploração do vasto campo do desenvolvimento de sistemas.
-                
-                Além do meu fascínio por códigos e algoritmos, sou um amante de jogos, filmes e séries. Acredito que a criatividade e a inspiração podem ser encontradas em diversas formas de entretenimento, enriquecendo minha perspectiva como desenvolvedor.</p>
-            <button>Entre em contato</button>
+    <!-- header -->
+    <header id="header" class="max-width">
+      <div class="header__left">
+        <h1>Olá! Sou Daniel Assunção </h1>
+        <p>
+         
+        </p>
+        <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+      </div>
+      <div class="header__right">
+        <div class="header__image">
+          <img src="assets/daniel.jpg" alt="Lucas Silva" class="lucas" />
+          <img src="assets/abstract.svg" alt="background" class="background" />
         </div>
+      </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="about" class="about max-width">
+      <div class="about__left">
+        <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+        <p>
+          Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
+          meu trabalho?
+        </p>
+        <ul>
+          <li>
+            <a href="https://github.com/Danielassuncao99" target="_blank"><img src="assets/github-icone novo.svg" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/danielassuncaodeoliveira/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1k74Rgxfs3WLtlMFKLjWdIjdYHPJ165QT/view" target="_blank"><img src="assets/curriculum-vitae_2 (1).svg" alt="curriculo" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="about__right">
+        <h3 class="tertiary-title mb-m">
+          Desenvolvedor Front-End apaixonado por tecnologia e soluções criativas
+        </h3>
+        <p>
+          Olá! Eu sou Daniel Assunção, um entusiasta da tecnologia com 24 anos e atualmente estudante de Análise e Desenvolvimento de Sistemas (2°período). Minha jornada no mundo da programação me proporcionou habilidades sólidas em HTML, CSS, JavaScript e Python, destacando-me como um apaixonado por criar soluções inovadoras. Desde jovem, sempre me fascinei por computadores e eletrônicos, e esse interesse cresceu naturalmente para uma paixão pela programação. Minha jornada até agora tem sido uma emocionante exploração do vasto campo do desenvolvimento de sistemas. Além do meu fascínio por códigos e algoritmos, sou um amante de jogos, filmes e séries. Acredito que a criatividade e a inspiração podem ser encontradas em diversas formas de entretenimento, enriquecendo minha perspectiva como desenvolvedor.
+        </p>
+        <p>
+          Eu amo o desafio de encontrar soluções inovadoras e criativas para
+          problemas complexos e estou sempre buscando aprender e crescer como
+          profissional.
+        </p>
+      </div>
     </section>
 
-
-    <div class="projetos" id="projetos-id">
-        <div>
-            <h2>Principais projetos</h2>
-        </div>
-        <div class="card-projetos"> 
-            
-            <div class="card">
-                <img src="img/netflix.png" alt="netflix">
-                <h5>Netflix</h5>
-
-                <p>O Clone Netflix consiste na clonagem da página de perfil da Netflix. O principal objetivo deste projeto é criar uma página inicial atraente e funcional usando os conceitos básicos de desenvolvimento Front End.</p>
-                <a href="https://clone-netflix-xi-nine.vercel.app/" target="_blank">ver projeto</a>
+    <!-- habilidades -->
+    <!--<section id="skills" class="skills">
+      <div class="skills__content max-width">
+        <h2 class="tertiary-title">Minha caixinha de ferramentas</h2>
+        <p class="description">
+          Descubra as habilidades e ferramentas que domino e que me permitem
+          criar soluções criativas e funcionais para meus clientes.
+        </p>
+        <ul>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/notebook.png" alt="Desenvolvimento Web" />
             </div>
-                <div class="card">
-                    <img src="img/github.png" alt="github">
-                    <h5>Git hub</h5>
-
-                    <p>O "Clone-Git hub" é a página inicial de um Sistema de login em desenvolvimento, focado em Desenvolvimento Front End.</p>
-                    <a href="https://git-hub-login-rho.vercel.app/" target="_blank">ver projeto</a>
-                </div>
-            
-            <div class="card">
-                <img src="img/logo-img.png" alt="alugue-aqui">
-                <h5>Alugue-Aqui</h5>
-
-                <p>ALUGUE-AQUI consiste na criação de uma plataforma on-line onde empresas possam alugar equipamentos eletrônicos, como câmeras, smartphones, acessórios e outros dispositivos tecnológicos. Atendendo necessidades temporárias de seus projetos ou eventos.</p>
-                <a href="https://alugue-aqui.onrender.com/" target="_blank">ver projeto</a>
+            <h3>Desenvolvimento Web</h3>
+            <p>
+              Experiência em desenvolvimento fullstack com foco em tecnologias
+              modernas.
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/colors.png" alt="Web Design" />
             </div>
+            <h3>Web Design</h3>
+            <p>
+              Habilidade em criar layouts modernos e responsivos, com foco na
+              experiência do usuário.
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/phone.png" alt="UX/UI Design" />
+            </div>
+            <h3>UX/UI Design</h3>
+            <p>
+              Conhecimentos em design de interface e experiência do usuário
+              visualmente atraentes e intuitivas.
+            </p>
+          </li>
+          <li class="skills__item">
+            <div class="image-container">
+              <img src="assets/files.png" alt="Gerenciamentos de versões" />
+            </div>
+            <h3>Gerenciamentos de versões</h3>
+            <p>
+              Experiência em ferramentas de gerenciamento de versão para
+              controle de projetos.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    -->
+    
+
+    <!-- Projetos -->
+    <section id="projects" class="projects max-width">
+      <div class="projects__content">
+        <h2 class="secondary-title">Projetos em Destaque</h2>
+        <p>
+           Aqui estão alguns dos
+          meus trabalhos mais recentes
+        </p>
+      </div>
+      <ul>
+        <li>
+          <div class="image">
+            <img src="assets/netflix.png" alt="netflix" />
+          </div>
+          <div class="projects__info">
+            <h3 class="tertiary-title">
+              Clone Netflix
+            </h3>
+            <p>
+              O Clone Netflix consiste na clonagem da página de perfil da Netflix. O principal objetivo deste projeto é criar uma página inicial atraente e funcional usando os conceitos básicos de desenvolvimento Front End.
+            </p>
+            <a href="https://clone-netflix-xi-nine.vercel.app/" target="_blank">Leia mais &rarr;</a>
+          </div>
+        </li>
+        <li class="projects__reversed-list">
+          <div class="image">
+            <img src="assets/github.png" alt="git-hub" />
+          </div>
+          <div class="projects__info">
+            <h3 class="tertiary-title">
+              Clone Git-Hub
+            </h3>
+            <p>
+              O "Clone-Git hub" é a página inicial de um Sistema de login em desenvolvimento, focado em Desenvolvimento Front End.
+            </p>
+            <a href="https://git-hub-login-rho.vercel.app/" target="_blank">Leia mais &rarr;</a>
+          </div>
+        </li>
+        <li>
+          <div class="image">
+            <img src="assets/logo-img.png" alt="alugue-aqui" />
+          </div>
+          <div class="projects__info">
+            <h3 class="tertiary-title">
+              Alugue-Aqui!
+            </h3>
+            <p>
+              ALUGUE-AQUI consiste na criação de uma plataforma on-line onde empresas possam alugar equipamentos eletrônicos, como câmeras, smartphones, acessórios e outros dispositivos tecnológicos. Atendendo necessidades temporárias de seus projetos ou eventos.
+            </p>
+            <a href="https://alugue-aqui.onrender.com/" target="_blank">Leia mais &rarr;</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer__content max-width mb-0">
+        <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+        <p class="mb-m">
+          Ficarei feliz em saber mais sobre seus projetos e como podemos
+          trabalhar juntos para torná-los realidade.
+        </p>
+        <div class="footer__contact mb-m">
+          <span class="mb-m">danielassuncao99@outlook.com</span>
+          <span><img src="assets/phone.png" alt=""><a href="https://wa.me/5521984749716" target="_blank">21 98474-9716</a> </span>
         </div>
-    </div>
-
-
-    <footer id="fale-comigo">
-        <h5>Daniel Assunção</h5>
-        <p>Para mais informações entre em contato:</p>
-
-        <div class="social">
-            <a href="https://www.linkedin.com/in/danielassuncaodeoliveira/" target="_blank"><img src="img/linkedin_icone.png" ></a>
-            <a href="https://wa.me/5521984749716" target="_blank"><img src="img/telefone.png" target="_blank"></a>
-            <a href="https://github.com/Danielassuncao99" target="_blank"><img src="img/github-icone.png" > </a>
-            <a href="mailto:danielassuncao99@outlook.com?" target="_blank"><img src="img/email-icone.png" ></a>
-            <a href="https://drive.google.com/file/d/1k74Rgxfs3WLtlMFKLjWdIjdYHPJ165QT/view?usp=sharing" target="_blank"><img src="img/curriculum-vitae.png" ></a>
-
-        </div>
+        <ul class="mb-l">
+          <li>
+            <a href="https://github.com/Danielassuncao99" target="_blank"><img src="assets/github-icone novo.svg" alt="Git-Hub" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/danielassuncaodeoliveira/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1k74Rgxfs3WLtlMFKLjWdIjdYHPJ165QT/view" target="_blank"><img src="assets/curriculum-vitae_2 (1).svg" alt="Facebook" /></a>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          © 2023 Daniel Assunção. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
-
-
-</body>
-
+    <!-- script -->
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
