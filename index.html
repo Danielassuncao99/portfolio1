@@ -33,6 +33,7 @@
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#footer">Contato</a></li>
         </ul>
+        <button class="theme-toggle" aria-label="Alternar para tema escuro" title="Alternar para tema escuro">🌙</button>
         <div class="navbar__mobile">
           <img src="assets/menu.svg" alt="menu" class="burguer" />
           <ul class="mobile__links">
@@ -50,9 +51,7 @@
     <header id="header" class="max-width">
       <div class="header__left">
         <h1>Olá! Sou Daniel Assunção </h1>
-        <p>
-         
-        </p>
+        <p class="header__subtitle">Desenvolvedor em formação, focado em front-end e boas práticas.</p>
         <a href="#about" class="btn btn-primary">Saiba Mais!</a>
       </div>
       <div class="header__right">
@@ -168,7 +167,7 @@
       <ul>
         <li>
           <div class="image">
-            <img src="assets/netflix.png" alt="netflix" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix" loading="lazy" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
@@ -196,7 +195,7 @@
         </li>
         <li>
           <div class="image">
-            <img src="assets/logo-img.png" alt="alugue-aqui" />
+            <img src="assets/logoAlugueAqui.jpg" alt="Alugue-Aqui" loading="lazy" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
@@ -235,7 +234,7 @@
           </li>
         </ul>
         <p class="footer__copyright">
-          © 2023 Daniel Assunção. Todos os direitos reservados.
+          © <span id="current-year">2023</span> Daniel Assunção. Todos os direitos reservados.
         </p>
       </div>
     </footer>

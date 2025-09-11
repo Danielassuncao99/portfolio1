@@ -1,5 +1,5 @@
 footer {
-  background-color: #8f5fff;
+  background-color: var(--footer-bg-color);
 }
 
 footer .footer__content {

@@ -7,7 +7,30 @@
   --dark-secondary-color: #3c415c;
   --tertiary-color: #a6b1e1;
   --light-tertiary-color: #f3f6fb;
-  --text-color: #343d48;
+  --text-color: #222222;
+
+  /* Cores semânticas do tema (modo claro padrão) */
+  --background-color: #f7f7fb;
+  --surface-color: #ffffff;
+  --navbar-bg-color: #4424d3;
+  --navbar-text-color: #ffffff;
+  --mobile-menu-bg-color: #170550;
+  --footer-bg-color: #8f5fff;
+
+  --focus-color: #7c50f4;
 
   --font-family: 'DM Sans', sans-serif;
+}
+
+[data-theme="dark"] {
+  --text-color: #e8e8ef;
+  --background-color: #0f1221;
+  --surface-color: #141935;
+  --navbar-bg-color: #141935;
+  --navbar-text-color: #e8e8ef;
+  --mobile-menu-bg-color: #0f1221;
+  --footer-bg-color: #141935;
+  --primary-color: #cfd6ff;
+  --secondary-color: #b8c0ff;
+  --tertiary-color: #8fa1ff;
 }
