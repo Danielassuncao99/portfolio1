@@ -55,6 +55,7 @@ header .header__right .header__image .background {
   top: -4rem;
   right: -2.5rem;
   z-index: -1;
+  opacity: 0.5; /* reduz o peso do background no dark */
   
 }
 
